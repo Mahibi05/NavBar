@@ -1,5 +1,8 @@
 let icons = document.querySelectorAll(".left ul li");
 let contant = document.querySelector(".contant");
+let brightbtn = document.querySelector(".right");
+
+
 
 function loadPage(file) {
   fetch(file)
@@ -12,6 +15,15 @@ function loadPage(file) {
       console.error(err);
     });
 }
+brightbtn.childNodes[1].addEventListener("click",()=>{
+  let data = document.body.classList.toggle("bright");
+  if(data){
+    brightbtn.childNodes[1].style.color = "black";
+  }else{
+    brightbtn.childNodes[1].style.color = "white";
+  }
+
+})
 
 icons[0].addEventListener("click", () => loadPage("/pages/home.html"));
 icons[1].addEventListener("click", () => loadPage("/pages/profile.html"));

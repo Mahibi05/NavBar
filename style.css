@@ -7,6 +7,10 @@
 body{
     background-color: var(--token-2c9bcabf-f173-455b-82fd-fa4690c678e5, #161616);
 }
+.bright{
+    background-color: white;
+    color: black;
+}
 header{
     display: flex;
     justify-content: center;
@@ -92,7 +96,8 @@ nav .right li:nth-child(2){
 }
 
 nav .right li:nth-child(2):hover{
-    border: 2px solid #232323c6;
+    /* border: 2px solid #232323c6; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 
 .icon-wrapper:hover {
