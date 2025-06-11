@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--token-2c9bcabf-f173-455b-82fd-fa4690c678e5, #161616);
+}
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav{
+    margin-top: 10px;
+    background-color: var(--token-05ea40f4-a7f8-45cc-bf87-94012fdef01c, rgb(33, 33, 33));
+    width: 560px;
+    height: 64px;
+    color: aliceblue;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--token-4d7df182-8b47-4a03-9047-6812b16bd3f4, rgb(44, 44, 44));
+    border-radius: 12px;
+    margin: 20px;
+}
+
+nav ul {
+    font-size: 24px;
+    list-style: none;
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-around;
+    width: 200px;
+}
+
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+  
+}
+nav ul li:hover{
+   background-color: #2C2C2C;
+  
+}
+
+nav .right{
+    margin-right: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+}
+
+nav .right li:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+    font-size: 24px;
+}
+
+nav .right li:nth-child(1):hover{
+    cursor: pointer;
+   background-color: #2C2C2C;
+ 
+}
+
+nav .right li:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    height: 24px;
+    background-color: #383838;
+    border-radius: 6px;
+    padding: 20px;
+    gap: 10px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+nav .right li:nth-child(2):hover{
+    border: 2px solid #232323c6;
+}
+
+.icon-wrapper:hover {
+    box-sizing: border-box;
+    background-color: #2C2C2C;
+}
+
+.icon-label {
+    position: absolute;
+    top: -0.3px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #393939;
+    width: 50px;
+    height: 16px;
+    text-align: center;
+    border-radius: 20px;
+    white-space: nowrap;
+    transform: translateY(25px);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.icon-wrapper:hover .icon-label {
+    opacity: 1;
+    transform: translateY(13px);
+}
+
+.contant{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    color: wheat;
+}
